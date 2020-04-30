@@ -1,6 +1,8 @@
 # esphome-fastled-matrix
 component for writing effects for LED matrixes
 
+**At the moment of commit it works only with esphome:dev branch!**
+
 ## Example usage:
 
 ``` yaml
