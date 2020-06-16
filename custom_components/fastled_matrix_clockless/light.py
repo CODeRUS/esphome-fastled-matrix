@@ -85,11 +85,12 @@ def new_fastled_matrix(config):
         cg.add(var.set_max_refresh_rate(config[CONF_MAX_REFRESH_RATE]))
 
     yield light.register_light(var, config)
-    cg.add_library('FastLED', '3.2.0')
+    cg.add_library('FastLED', '3.2.9')
     cg.add_library('https://github.com/marcmerlin/FastLED_NeoMatrix.git', '')
     cg.add_library('https://github.com/marcmerlin/Framebuffer_GFX.git', '')
     cg.add_library('Adafruit GFX Library', '')
     cg.add_library('SPI', '')
+    cg.add_library('Wire', '')
     yield var
 
 def validate(value):
